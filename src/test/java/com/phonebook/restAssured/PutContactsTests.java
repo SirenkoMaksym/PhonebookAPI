@@ -5,9 +5,7 @@
 
 package com.phonebook.restAssured;
 
-import com.google.gson.Gson;
 import com.phobebook.dto.ContactDto;
-import com.phobebook.dto.ErrorDto;
 import io.restassured.http.ContentType;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
@@ -202,7 +200,6 @@ public class PutContactsTests extends TestBase {
                 .put("contacts/add")
                 .then()
                 .assertThat().statusCode(403);
-        System.out.println(id);
     }
 
 
